@@ -8,4 +8,4 @@ Project Euler solutions
  * The winner is chosen from the people who have solved the problem of the week.
 
 # Organazing code here:
- * Every week we create new folder for the problem and then we push our solutions there.
+ * Every week we create a new folder for the problem and then we push our solutions there.
