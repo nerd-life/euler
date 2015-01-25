@@ -1,12 +1,12 @@
 #lang Scheme
 
-(define (sum_even_fibs prev curr next)
-  (if (<= curr 4000000) 
-             (+ 
-              (if (= (remainder curr 2) 0) curr 0)
-              (sum_even_fibs curr next (+ curr next))
-              )
-         0)
+(define (sumEvenFibs prev curr next)
+  (if (> curr 4000000) 0
+      (+ 
+       (if (even? curr) curr 0)
+       (sumEvenFibs curr next (+ curr next))
+       )
+      ) 
   )
 
-(sum_even_fibs 0 1 1)
+(sumEvenFibs 0 1 1)
